@@ -1,0 +1,71 @@
+.navbar-custom {
+  background-color: #032202; 
+}
+
+.container_accnotif{
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+
+.fondo_parallax {
+  background-image: url("imagenes/fondo2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+.nav-link {
+  font-size: 120%;
+}
+
+
+.texto_fondo{
+  font-weight: bold;
+  font-size: 220%;
+  text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    5px 5px 0 #000;
+}
+
+
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.container {
+
+  padding-top: 30px; padding-bottom: 40px;
+
+}
+
+
+
+.texto_novedades{
+
+  padding-top: 30px;
+}
+
+
+
+
+.bg-custom {
+  background-color: #032202;
+}
+
+
+{}
