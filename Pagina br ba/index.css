@@ -1,6 +1,10 @@
+
+
 .navbar-custom {
   background-color: #032202; 
+  padding:0;
 }
+
 
 .container_accnotif{
   display: flex;
@@ -8,7 +12,10 @@
 
 }
 
-
+* {
+scroll-behavior: smooth;
+  
+}
 
 .fondo_parallax {
   background-image: url("imagenes/fondo2.jpg");
@@ -19,7 +26,10 @@
   display: flex;
   align-items: center;
   text-align: center;
-  
+  animation: fade;
+  animation-duration: 1s;
+
+
 }
 
 
@@ -28,7 +38,10 @@
 }
 
 
+
+
 .texto_fondo{
+  position: relative;
   font-weight: bold;
   font-size: 220%;
   text-shadow:
@@ -36,20 +49,31 @@
     1px -1px 0 #000,
     -1px 1px 0 #000,
     5px 5px 0 #000;
+    animation-name: arriba, fade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+
 }
 
 
-
-
-::-webkit-scrollbar {
-  display: none;
+@keyframes arriba {
+ from { bottom: -100px; }
+  to { bottom: 0px; }
 }
 
-
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .container {
 
-  padding-top: 30px; padding-bottom: 40px;
+  padding-top: 50px; padding-bottom: 40px;
 
 }
 
@@ -62,10 +86,67 @@
 
 
 
-
 .bg-custom {
   background-color: #032202;
 }
+
+
+.carousel {
+      max-width: 400px; 
+      margin: auto;
+       
+    }
+
+   
+#espacio {
+      padding-bottom:3%;
+       
+    }
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+/* estilos especificos de pantallas chiquitas */
+@media (max-width: 768px) {
+
+  .navbar-custom {
+  background-color: red; 
+}
+
+
+
+
+
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 768px) and (max-width: 992px) {
+  
+  .navbar-custom {
+  background-color: blue; 
+}
+
+
+
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+  
+}
+
+
+
+
+
+
+
+
+
 
 
 {}
