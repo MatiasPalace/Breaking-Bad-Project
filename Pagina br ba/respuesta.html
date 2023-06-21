@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
 </head>
 
 
@@ -20,7 +19,7 @@
 <!-- Header -->
 <nav class="navbar navbar-expand navbar-custom">
   <a class="mx-4 logo" href="index.html"><img src="imagenes/felina.jpg" alt="Logo" width="240"></a>
-  <div class="navbar">
+  <div class="navbar ">
     <ul class="nav-custom">
       <li class="nav-item">
         <a class="nav-link text-white mx-4" href="subpagina1.html">Episodios</a>
@@ -39,10 +38,10 @@
         <a class="nav-link" href="formulario.html" ><img src="imagenes/account.png" alt="Cuenta" width="50"></a>
         <a class="nav-link" href="formulario.html"><img src="imagenes/notifications.png" alt="Notificaciones" width="50"></a>
       </div>
+      <div>
+</div>
   </div>
 </nav>
-
-
 
 <nav class="lista">
     <div>
@@ -50,115 +49,79 @@
       <div><a href="subpagina2.html">Personajes</a></div>
       <div><a href="subpagina3.html">Foros</a></div>
       <div><a href="subpagina3.html #novedades">Novedades</a></div>
-      <div><a href="formulario.html">Registrarse</a></div>
     </div>
   </nav>
 
 
 
-
-
 <!-- Imagen Fondo -->
-<section class="fondo_parallax3">
+<section class="fondo_parallax">
   <div class="container">
-   <h1 class="texto_fondo text-white">Personajes:</h1>
+   <h1 class="texto_fondo text-white">Bienvenidos a Felina!</h1>
     <p class="texto_fondo text-white" id="fraseAleatoria"></p>
   </div>
 </section>
 
-
 <script>
    
     var frases = [
-      "Las Figuras de Breaking Bad.",
-      "Secretos y Curiosidades sobre Todos!",
-      "Descubre Quienes Realmente Son!"
+      "La página Número 1 para Fans de Breaking Bad!",
+      "Todo sobre Breaking Bad!",
+      "Descubre todo sobre tu serie favorita!"
     ];
 
     var indiceAleatorio = Math.floor(Math.random() * 3);
     var fraseAleatoria = frases[indiceAleatorio];
     document.getElementById("fraseAleatoria").innerHTML = fraseAleatoria;
 
-  </script>
+</script>
 
 
 
+<!-- formulario texto -->
 
-<!-- Tabla -->
-<div class="tabla">
-<img width="90%" src="imagenes/tablaperiodica.jpg">
-</div>
-
-
-
-<!-- Personajes Mobile -->
-<div class="container personajes_mobile">
-    <div class="row">
-      <div class="col-12">
-        <h2>Personajes</h2>
-        <ul>
-          <li>Walter White (Heisenberg)</li>
-          <li>Jesse Pinkman</li>
-          <li>Skyler White</li>
-          <li>Hank Schrader</li>
-          <li>Marie Schrader</li>
-          <li>Walter White Jr. (Flynn)</li>
-          <li>Saul Goodman (Jimmy McGill)</li>
-          <li>Gus Fring</li>
-          <li>Mike Ehrmantraut</li>
-          <li>Jane Margolis</li>
-          <li>Tuco Salamanca</li>
-          <li>Hector Salamanca</li>
-          <li>Lydia Rodarte-Quayle</li>
-          <li>Todd Alquist</li>
-          <li>Skinny Pete</li>
-          <li>Badger</li>
-          <li>Combo</li>
-          <li>Gale Boetticher</li>
-          <li>Andrea Cantillo</li>
-          <li>Brock Cantillo</li>
-          <li>Ted Beneke</li>
-          <li>Elliott Schwartz</li>
-          <li>Gretchen Schwartz</li>
-          <li>Todd's Uncle Jack</li>
-          <li>Kenny</li>
-          <li>Huell Babineaux</li>
-          <li>Kuby</li>
-          <li>Declan</li>
-          <li>Ed Galbraith</li>
-          <li>Tyrus Kitt</li>
-        </ul>
-      </div>
-    </div>  
-</div>
-
-
-<!-- Fotos Personajes -->
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div class="container"><p class="texto_registro">Nos gustaría que nos cuentes sobre tu experiencia con Felina y también queremos contarte más sobre nosotros. Siempre tomamos las opiniones de nuestros fans con suma seriedad y cambiamos nuestro sitio para que cada día mejoremos. Llena el formulario y crea una cuenta para ser parte de esta maravillosa comunidad de fans de Breaking Bad!</p></div>
  
 
-  <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="imagenes/jesse1.jpg" alt="slide1">
-      </div>
-      <div class="item">
-        <img src="imagenes/walter1.jpg" alt="slide2">
-      </div>
-      <div class="item">
-        <img src="imagenes/skyler1.jpg" alt="slide3">
-      </div>
-      <div class="item">
-        <img src="imagenes/gale.JPG" alt="slide3">
-      </div>
-      <div class="item">
-        <img src="imagenes/walterjr.jpg" alt="slide3">
-      </div>
-    </div>
+<!-- formulario -->
+  
+  <div class="formulario">
+  <h1>Formulario de registro</h1>
 
-</div>
+  <form action="respuesta.html#respuesta" method="post">
+  <p>
+  Nombre: <input type="text" name="nombre" required maxlength="50" />
+  </p>
 
-<div id="espacio"><img src=""></div> <!-- Dejo este espacio por ahora porque el padding no funciona con el carrusel por alguna razón -->
+  <p>
+  Apellidos: <input type="text" name="apellidos" required maxlength="50" />
+  </p>
+
+  <p>
+  Correo: <input type="email" name="correo" required maxlength="100" />
+  </p>
+
+  <p>
+  <input type="checkbox" name="info" checked="checked" /> Deseo recibir información sobre novedades y ofertas
+  </p>
+
+  <p>
+  <input type="checkbox" name="condiciones" required /> Declaro haber leido y aceptar los terminos y condiciones
+  </p>
+
+  <p>
+  <input type="submit" value="Enviar"/>
+  </p>
+  </form>
+  
+  </div>
+
+
+
+<!-- Respuesta -->
+<center><h4 id="respuesta" class="texto_respuesta">La solicitud fue enviada con exito!</h4></center>
+
+
 
 
 <!-- Footer -->

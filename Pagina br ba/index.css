@@ -1,9 +1,25 @@
+.nav-custom {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:  #032202
+  }
 
+  .nav-custom .nav-item {
+    margin-right: 7rem;
+    padding-left:2%;
+    font-size: 120%;
 
-.navbar-custom {
-  background-color: #032202; 
-  padding:0;
-}
+  }
+
+.navbar-expand {
+    background-color:  #032202
+  }
+
+.nav-link:hover {
+    background-color: #369457;
+  }
 
 
 .container_accnotif{
@@ -14,7 +30,6 @@
 
 * {
 scroll-behavior: smooth;
-  
 }
 
 .fondo_parallax {
@@ -32,11 +47,121 @@ scroll-behavior: smooth;
 
 }
 
+.fondo_parallax2 {
+  background-image: url("imagenes/fondo4.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  animation: fade;
+  animation-duration: 1s;
+
+
+}
+
+
+.fondo_parallax3 {
+  background-image: url("imagenes/fondo6.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  animation: fade;
+  animation-duration: 1s;
+
+
+}
+
+
+.fondo_parallax4 {
+  background-image: url("imagenes/fondo5.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  animation: fade;
+  animation-duration: 1s;
+
+
+}
 
 .nav-link {
   font-size: 120%;
 }
 
+
+.custom-height {
+    height: 500px;
+  }
+
+.columna1 {
+    text-align: center;
+    background-color: #369457;
+    color:white; 
+    animation: arriba;
+    animation-duration: 2s;
+    display: flex;
+  }
+  
+  .columna1:hover {
+    background-color: #032202;
+
+  }
+
+.columna2 {
+    text-align: center;
+    background-color: #29773E;
+    color:white; 
+    animation: arriba;
+    animation-duration: 2.4s;
+  }
+
+  .columna2:hover {
+    background-color: #032202;}
+
+.columna3 {
+    text-align: center;
+    background-color: #1F6032;
+    color:white; 
+    animation: arriba;
+    animation-duration: 2.8s;
+  }
+
+.columna3:hover {
+    background-color: #032202;}
+
+.columna4 {
+    text-align: center;
+    background-color: #0D3E10;
+    color:white; 
+    animation: arriba;
+    animation-duration: 3.2s;
+  }      
+
+.columna4:hover {
+    background-color: #032202;}
+
+.columna5 {
+    text-align: center;
+    background-color: #093009;
+    color:white; 
+    animation: arriba;
+    animation-duration: 3.6s;
+    animation-iteration-count: 1;
+  }
+
+
+  .columna5:hover {
+    background-color: #032202;}
 
 
 
@@ -48,11 +173,10 @@ scroll-behavior: smooth;
     -1px -1px 0 #000,  
     1px -1px 0 #000,
     -1px 1px 0 #000,
-    5px 5px 0 #000;
+    3px 3px 0 #000;
     animation-name: arriba, fade;
     animation-duration: 2s;
     animation-iteration-count: 1;
-
 
 }
 
@@ -84,7 +208,10 @@ scroll-behavior: smooth;
   padding-top: 30px;
 }
 
+.texto_pizza{
 
+  justify-content: right;
+}
 
 .bg-custom {
   background-color: #032202;
@@ -94,7 +221,7 @@ scroll-behavior: smooth;
 .carousel {
       max-width: 400px; 
       margin: auto;
-       
+    
     }
 
    
@@ -110,33 +237,204 @@ scroll-behavior: smooth;
 
 
 
+.pizarra {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+
+.tabla {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4%;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+}
+
+
+
+.hover-item {
+  transition: transform 0.3s; 
+}
+
+.hover-item:hover {
+  transform: scale(1.2);
+}
+
+
+.icono {
+display: block;
+width:100%;
+}
+
+.formulario {
+
+  color:black;
+  text-align: center;
+  background-color: lightgrey;
+  padding:1%;
+}
+
+
+.texto_registro{
+
+  font-size: 130%;
+}
+
+.texto_respuesta{
+ padding-bottom: 7%;
+ padding-top: 7%;
+ background-color: green;
+ color:white;
+}
+
 /* estilos especificos de pantallas chiquitas */
 @media (max-width: 768px) {
 
-  .navbar-custom {
-  background-color: red; 
+.nav-item{
+display: none;
+}
+
+.container_accnotif{
+display: none;
+}
+
+.icono {
+display: block;
+width:100%;
+}
+
+.lista{
+display: block;
+width:100%;
+font-size: 200%;
+text-align: center;
+color:#032202;
+}
+
+.texto_novedades{
+display:none;
+
+}
+.texto_novedades_mobile{
+display:block;
+padding:5%;
+}
+
+#texto_pizza{
+display:none;
+
+}
+
+.episodios_mobile{
+display:block;
+text-align: center;
+
+}
+
+
+.personajes_mobile{
+display:block;
+text-align: center;
+
+}
+
+.pizarra{
+display:none;
+}
+
+.tabla{
+display:none;
 }
 
 
 
-
+.logo{
+padding-left: 15%;
+align-items: center;
 
 }
+
+}
+
+
 
 /* Estilos para pantallas medianas */
 @media (min-width: 768px) and (max-width: 992px) {
   
-  .navbar-custom {
-  background-color: blue; 
+
+.icono {
+display: none;
+width:100%;
+}
+
+.lista{
+display: none;
+width:100%;
+}
+
+.texto_novedades_mobile{
+display:none;
+
+}
+
+.episodios_mobile{
+display:none;
+
+}
+
+.personajes_mobile{
+display:none;
+
+}
+
+.logo{
+padding-left:0;
+
+}
+
 }
 
 
 
-}
 
 /* Estilos para pantallas grandes */
 @media (min-width: 992px) {
   
+.icono {
+display: none;
+width:100%;
+}
+.lista{
+display: none;
+width:100%;
+}
+
+.texto_novedades_mobile{
+display:none;
+}
+
+
+.episodios_mobile{
+display:none;
+
+}
+
+.personajes_mobile{
+display:none;
+
+}
+
+
+.logo{
+padding-left:0;
+align-items: center;
+
+}
+
 }
 
 
